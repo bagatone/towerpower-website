@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Tower Power</title>
+
+<style>
+body{
+    margin:0;
+    font-family:Arial, sans-serif;
+    background:#f7f7f7;
+    color:#222;
+    text-align:center;
+}
+
+.hero{
+    padding:40px 20px;
+}
+
+.logo{
+    max-width:350px;
+    width:90%;
+}
+
+h1{
+    font-size:3rem;
+    margin-top:20px;
+}
+
+h2{
+    color:#2d6a4f;
+    font-weight:normal;
+}
+
+.section{
+    max-width:900px;
+    margin:auto;
+    padding:20px;
+}
+
+.card{
+    background:white;
+    padding:30px;
+    border-radius:12px;
+    box-shadow:0 2px 10px rgba(0,0,0,0.1);
+}
+
+footer{
+    margin-top:40px;
+    padding:20px;
+    background:#2d6a4f;
+    color:white;
+}
+</style>
+
+</head>
+
+<body>
+
+<div class="hero">
+
+<img src="logo.png" alt="Tower Power" class="logo">
+
+<h1>TOWER POWER</h1>
+
+<h2>Vertical Farming & Premium Microgreens</h2>
+
+<p>📍 Tefía · Fuerteventura · Canary Islands</p>
+
+</div>
+
+<div class="section">
+
+<div class="card">
+
+<h2>🇪🇸 Sitio web en construcción</h2>
+
+<p>
+Tower Power es un proyecto de agricultura vertical ubicado en Fuerteventura,
+especializado en la producción de microgreens premium mediante sistemas
+de cultivo sostenibles y tecnología de agricultura vertical.
+</p>
+
+<p>
+Próximamente ofreceremos nuestros productos a restaurantes,
+hoteles, tiendas gourmet y clientes particulares.
+</p>
+
+<hr>
+
+<h2>🇬🇧 Website under construction</h2>
+
+<p>
+Tower Power is a vertical farming project based in Fuerteventura,
+focused on producing premium microgreens using sustainable growing methods
+and advanced vertical farming systems.
+</p>
+
+<p>
+We will soon supply restaurants, hotels, gourmet stores
+and private customers across the island.
+</p>
+
+</div>
+
+</div>
+
+<div class="section">
+
+<h2>Contact</h2>
+
+<p>📧 info@towerpower.green</p>
+
+<p>📱 Matteo: +34 699 664 041</p>
+
+<p>📱 Giulia: +34 641 629 653</p>
+
+</div>
+
+<footer>
+
+🌱 First harvests arriving soon.
+
+</footer>
+
+</body>
+</html>
