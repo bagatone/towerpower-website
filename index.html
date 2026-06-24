@@ -8,72 +8,193 @@
 
 <style>
 
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+}
+
 body{
-    margin:0;
-    font-family:Arial, Helvetica, sans-serif;
-    background:#f4f7f2;
-    color:#222;
+font-family:Arial, Helvetica, sans-serif;
+background:#f8f8f5;
+color:#222;
+line-height:1.6;
 }
 
-header{
-    background:#1f4d2e;
-    color:white;
-    text-align:center;
-    padding:60px 20px;
+.hero{
+display:flex;
+min-height:520px;
 }
 
-header h1{
-    font-size:3em;
-    margin-bottom:10px;
+.hero-left{
+width:40%;
+background:#082d12;
+color:white;
+padding:60px;
+display:flex;
+flex-direction:column;
+justify-content:center;
 }
 
-.notice{
-    background:#e9f7e9;
-    color:#1f4d2e;
-    padding:15px;
-    text-align:center;
-    font-weight:bold;
+.logo{
+width:220px;
+margin-bottom:30px;
+}
+
+.hero-left h1{
+font-size:54px;
+line-height:1;
+margin-bottom:20px;
+}
+
+.hero-left h2{
+font-size:22px;
+color:#8ee26f;
+margin-bottom:15px;
+}
+
+.hero-left p{
+font-size:20px;
+margin-bottom:10px;
+}
+
+.construction{
+background:#11551e;
+padding:20px;
+border-radius:12px;
+margin-top:30px;
+}
+
+.hero-right{
+width:60%;
+background-image:url('https://images.unsplash.com/photo-1512428813834-c702c7702b78?auto=format&fit=crop&w=1400&q=80');
+background-size:cover;
+background-position:center;
 }
 
 .container{
-    max-width:1100px;
-    margin:auto;
-    padding:40px 20px;
+width:90%;
+max-width:1400px;
+margin:auto;
+padding:60px 0;
 }
 
-.section{
-    margin-bottom:60px;
+.languages{
+display:grid;
+grid-template-columns:1fr 1fr;
+gap:60px;
+margin-bottom:70px;
 }
 
-h2{
-    color:#1f4d2e;
+.language-box{
+background:white;
+padding:35px;
+border-radius:15px;
+box-shadow:0 2px 10px rgba(0,0,0,.08);
 }
 
-.products{
-    display:grid;
-    grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
-    gap:20px;
+.language-box h2{
+color:#1f5d28;
+margin-bottom:25px;
+}
+
+.language-box p{
+margin-bottom:15px;
+}
+
+.section-title{
+text-align:center;
+font-size:40px;
+color:#1f5d28;
+margin-bottom:40px;
+}
+
+.microgreens{
+display:grid;
+grid-template-columns:repeat(6,1fr);
+gap:20px;
+margin-bottom:70px;
 }
 
 .card{
-    background:white;
-    padding:20px;
-    border-radius:12px;
-    box-shadow:0 2px 8px rgba(0,0,0,0.08);
+background:white;
+border-radius:12px;
+overflow:hidden;
+box-shadow:0 2px 10px rgba(0,0,0,.08);
 }
 
-.contact{
-    background:white;
-    padding:30px;
-    border-radius:12px;
-    box-shadow:0 2px 8px rgba(0,0,0,0.08);
+.card img{
+width:100%;
+height:140px;
+object-fit:cover;
 }
 
-footer{
-    background:#1f4d2e;
-    color:white;
-    text-align:center;
-    padding:20px;
+.card h3{
+padding:15px 10px 5px;
+text-align:center;
+color:#1f5d28;
+}
+
+.card p{
+padding:0 10px 15px;
+font-size:13px;
+text-align:center;
+}
+
+.contacts{
+background:white;
+padding:40px;
+border-radius:15px;
+box-shadow:0 2px 10px rgba(0,0,0,.08);
+}
+
+.contact-grid{
+display:grid;
+grid-template-columns:1fr 1fr 1fr;
+gap:30px;
+text-align:center;
+}
+
+.contact-grid h3{
+color:#1f5d28;
+margin-bottom:10px;
+}
+
+.footer{
+background:#0c3b16;
+color:white;
+text-align:center;
+padding:30px;
+margin-top:60px;
+}
+
+@media(max-width:900px){
+
+.hero{
+flex-direction:column;
+}
+
+.hero-left,
+.hero-right{
+width:100%;
+}
+
+.hero-right{
+height:300px;
+}
+
+.languages{
+grid-template-columns:1fr;
+}
+
+.microgreens{
+grid-template-columns:repeat(2,1fr);
+}
+
+.contact-grid{
+grid-template-columns:1fr;
+}
+
 }
 
 </style>
@@ -81,117 +202,198 @@ footer{
 
 <body>
 
-<header>
+<section class="hero">
+
+<div class="hero-left">
+
+<img class="logo"
+src="https://i.imgur.com/L4K2Qj8.png">
 
 <h1>TOWER POWER</h1>
 
-<p>
-Premium Microgreens grown in Fuerteventura
-</p>
+<p>Fresh. Local. Sustainable.</p>
 
-</header>
+<h2>Grown in Fuerteventura.</h2>
 
-<div class="notice">
-🚧 Website under construction — Full website coming soon.
+<p>Vertical farming for a healthier future.</p>
+
+<div class="construction">
+<h3>🌱 WEBSITE UNDER CONSTRUCTION</h3>
+<p>Full website coming soon.</p>
 </div>
+
+</div>
+
+<div class="hero-right"></div>
+
+</section>
 
 <div class="container">
 
-<div class="section">
+<div class="languages">
 
-<h2>ENGLISH</h2>
+<div class="language-box">
+
+<h2>🇬🇧 ENGLISH</h2>
 
 <p>
-Tower Power is a vertical farming project based in Tefía, Fuerteventura.
-We produce premium fresh microgreens using sustainable cultivation methods,
+Tower Power is a vertical farming project based in Tefía,
+Fuerteventura.
+</p>
+
+<p>
+We produce premium microgreens using sustainable methods,
 controlled environments and advanced vertical farming systems.
 </p>
 
 <p>
-Our mission is to provide chefs, restaurants, retailers and health-conscious
-customers with fresh, nutritious and locally produced microgreens.
+Our mission is to provide chefs, restaurants,
+retailers and health-conscious customers with fresh,
+nutritious and locally grown microgreens.
 </p>
 
 </div>
 
-<div class="section">
+<div class="language-box">
 
-<h2>Available Microgreens</h2>
-
-<div class="products">
-
-<div class="card">
-<h3>Pea Shoots</h3>
-<p>Sweet flavour and crunchy texture.</p>
-</div>
-
-<div class="card">
-<h3>Sunflower</h3>
-<p>Nutty taste and rich nutritional profile.</p>
-</div>
-
-<div class="card">
-<h3>Radish</h3>
-<p>Spicy flavour and vibrant colour.</p>
-</div>
-
-<div class="card">
-<h3>Lentils</h3>
-<p>Fresh, delicate and highly nutritious.</p>
-</div>
-
-<div class="card">
-<h3>Mustard</h3>
-<p>Strong flavour with a pleasant kick.</p>
-</div>
-
-<div class="card">
-<h3>Rocket</h3>
-<p>Peppery taste ideal for gourmet dishes.</p>
-</div>
-
-</div>
-
-</div>
-
-<div class="section">
-
-<h2>ESPAÑOL</h2>
+<h2>🇪🇸 ESPAÑOL</h2>
 
 <p>
-Tower Power es un proyecto de agricultura vertical ubicado en Tefía,
-Fuerteventura.
-Producimos microgreens premium utilizando métodos de cultivo sostenibles,
+Tower Power es un proyecto de agricultura vertical ubicado
+en Tefía, Fuerteventura.
+</p>
+
+<p>
+Producimos microgreens premium utilizando métodos sostenibles,
 ambientes controlados y sistemas avanzados de agricultura vertical.
 </p>
 
 <p>
-Nuestro objetivo es ofrecer microgreens frescos, nutritivos y producidos
-localmente para chefs, restaurantes, comercios y consumidores que valoran
-la calidad y la alimentación saludable.
+Nuestro objetivo es ofrecer a chefs, restaurantes,
+tiendas y personas que cuidan su salud microgreens frescos,
+nutritivos y cultivados localmente.
 </p>
 
 </div>
 
-<div class="section contact">
+</div>
 
-<h2>Contact</h2>
+<h2 class="section-title">
+🌱 NUESTROS MICROGREENS 🌱
+</h2>
 
-<p>📧 info@towerpower.green</p>
+<div class="microgreens">
+    <div class="card">
+<img src="https://images.unsplash.com/photo-1586201375761-83865001e31c?auto=format&fit=crop&w=600&q=80">
+<h3>GUISANTES</h3>
+<p>Sabor dulce y textura tierna y crujiente.</p>
+</div>
 
-<p>📱 Matteo: +34 699 664 041</p>
+<div class="card">
+<img src="https://images.unsplash.com/photo-1518977676601-b53f82aba655?auto=format&fit=crop&w=600&q=80">
+<h3>RÁBANO MORADO</h3>
+<p>Sabor picante y color vibrante.</p>
+</div>
 
-<p>📱 Giulia: +34 641 629 653</p>
+<div class="card">
+<img src="https://images.unsplash.com/photo-1540420773420-3366772f4999?auto=format&fit=crop&w=600&q=80">
+<h3>CILANTRO</h3>
+<p>Aroma fresco e intenso.</p>
+</div>
 
-<p>Tefía · Fuerteventura · Canary Islands · Spain</p>
+<div class="card">
+<img src="https://images.unsplash.com/photo-1512621776951-a57141f2eefd?auto=format&fit=crop&w=600&q=80">
+<h3>GIRASOL</h3>
+<p>Sabor suave y textura carnosa.</p>
+</div>
+
+<div class="card">
+<img src="https://images.unsplash.com/photo-1518977676601-b53f82aba655?auto=format&fit=crop&w=600&q=80">
+<h3>COL ROJA</h3>
+<p>Color intenso y sabor suave.</p>
+</div>
+
+<div class="card">
+<img src="https://images.unsplash.com/photo-1512621776951-a57141f2eefd?auto=format&fit=crop&w=600&q=80">
+<h3>MIZUNA</h3>
+<p>Sabor ligeramente picante.</p>
+</div>
+
+<div class="card">
+<img src="https://images.unsplash.com/photo-1490645935967-10de6ba17061?auto=format&fit=crop&w=600&q=80">
+<h3>HINOJO</h3>
+<p>Aroma anisado característico.</p>
+</div>
+
+<div class="card">
+<img src="https://images.unsplash.com/photo-1512621776951-a57141f2eefd?auto=format&fit=crop&w=600&q=80">
+<h3>MOSTAZA</h3>
+<p>Sabor intenso con toque picante.</p>
+</div>
+
+<div class="card">
+<img src="https://images.unsplash.com/photo-1512621776951-a57141f2eefd?auto=format&fit=crop&w=600&q=80">
+<h3>LENTEJAS</h3>
+<p>Delicadas y muy nutritivas.</p>
+</div>
+
+<div class="card">
+<img src="https://images.unsplash.com/photo-1512621776951-a57141f2eefd?auto=format&fit=crop&w=600&q=80">
+<h3>PAK CHOY</h3>
+<p>Sabor suave y textura crujiente.</p>
+</div>
+
+<div class="card">
+<img src="https://images.unsplash.com/photo-1601004890684-d8cbf643f5f2?auto=format&fit=crop&w=600&q=80">
+<h3>ALBAHACA</h3>
+<p>Aroma dulce e intenso.</p>
+</div>
+
+<div class="card">
+<img src="https://images.unsplash.com/photo-1501004318641-b39e6451bec6?auto=format&fit=crop&w=600&q=80">
+<h3>RÚCULA</h3>
+<p>Sabor picante y aromático.</p>
+</div>
+
+</div>
+
+<div class="contacts">
+
+<h2 class="section-title">🌱 CONTÁCTANOS 🌱</h2>
+
+<div class="contact-grid">
+
+<div>
+<h3>📱 Matteo</h3>
+<p>+34 699 664 041</p>
+<p>WhatsApp</p>
+</div>
+
+<div>
+<h3>📱 Giulia</h3>
+<p>+34 641 629 653</p>
+<p>WhatsApp</p>
+</div>
+
+<div>
+<h3>✉️ Email</h3>
+<p>info@towerpower.green</p>
+<p>Contact us anytime</p>
+</div>
+
+</div>
 
 </div>
 
 </div>
 
-<footer>
+<footer class="footer">
 
-Tower Power © 2026
+<p>Tefía · Fuerteventura · Islas Canarias · España</p>
+
+<br>
+
+<p><em>Better for you. Better for the planet.</em></p>
 
 </footer>
 
