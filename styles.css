@@ -304,6 +304,12 @@ main {
   font-weight: 900;
 }
 
+.contact-card__icon svg {
+  width: 30px;
+  height: 30px;
+  fill: currentColor;
+}
+
 .contact-card strong,
 .contact-card small,
 .contact-card em {
