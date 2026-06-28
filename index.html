@@ -1,23 +1,171 @@
- <!DOCTYPE html>
-<html lang="en">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Tower Power</title>
-<style>
-body{
-    margin:0;
-    background:#ffffff;
-}
-img{
-    width:100%;
-    display:block;
-}
-</style>
-</head>
-<body>
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Tower Power | Microgreens en Fuerteventura</title>
+    <meta
+      name="description"
+      content="Tower Power es un proyecto de agricultura vertical y microgreens en Tefia, Fuerteventura. Sitio web en construcción."
+    >
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <header class="hero">
+      <img class="hero__image" src="foto-hero.jpeg" alt="Microgreens cultivados en bandejas en Tower Power">
+      <div class="hero__shade"></div>
+      <nav class="topbar" aria-label="Principal">
+        <a class="brand" href="#inicio" aria-label="Tower Power">
+          <img class="brand__logo" src="towerpower-logo.jpg" alt="Tower Power">
+        </a>
+        <a class="topbar__contact" href="#contacto">Contacto</a>
+      </nav>
 
-<img src="mockup-towerpower.jpg" alt="Tower Power">
+      <section class="hero__content" id="inicio">
+        <p class="eyebrow">Vertical farming & microgreens</p>
+        <h1>
+          Fresh. Local. Sustainable.
+          <span>Grown in Fuerteventura.</span>
+        </h1>
+        <p class="hero__lead">
+          Vertical farming for a healthier future.
+        </p>
+        <div class="construction" role="status" aria-label="Sitio web en construcción">
+          <span class="construction__icon" aria-hidden="true">⌁</span>
+          <span>
+            <strong>Website under construction</strong>
+            <small>Full website coming soon.</small>
+          </span>
+        </div>
+      </section>
+    </header>
 
-</body>
+    <main>
+      <section class="intro" aria-labelledby="sobre-tower-power">
+        <div>
+          <p class="section-kicker">Tower Power</p>
+          <h2 id="sobre-tower-power">Agricultura vertical para un futuro más saludable.</h2>
+        </div>
+        <div class="intro__text">
+          <p>
+            Tower Power es un proyecto de agricultura vertical ubicado en Tefia, Fuerteventura. Producimos microgreens premium con métodos sostenibles, ambientes controlados y sistemas avanzados de cultivo vertical.
+          </p>
+          <p>
+            Nuestro objetivo es ofrecer microgreens frescos, nutritivos y cultivados localmente, con sabor intenso y una calidad constante durante todo el año.
+          </p>
+        </div>
+      </section>
+
+      <section class="products" aria-labelledby="microgreens">
+        <div class="section-heading">
+          <p class="section-kicker">Nuestra selección</p>
+          <h2 id="microgreens">Microgreens disponibles</h2>
+        </div>
+        <div class="product-grid">
+          <article class="product-card">
+            <img src="guisantes.jpeg" alt="Microgreens de guisantes">
+            <h3>Guisantes</h3>
+            <p>Sabor dulce y textura tierna y crujiente.</p>
+          </article>
+          <article class="product-card">
+            <img src="rabano%20morado.jpeg" alt="Microgreens de rábano morado">
+            <h3>Rábano morado</h3>
+            <p>Sabor picante y color vibrante.</p>
+          </article>
+          <article class="product-card">
+            <img src="cilantro.jpeg" alt="Microgreens de cilantro">
+            <h3>Cilantro</h3>
+            <p>Aroma fresco e intenso, ideal para platos gourmet.</p>
+          </article>
+          <article class="product-card">
+            <img src="girasole.jpeg" alt="Microgreens de girasol">
+            <h3>Girasol</h3>
+            <p>Sabor suave y textura carnosa.</p>
+          </article>
+          <article class="product-card">
+            <img src="col%20roja.jpeg" alt="Microgreens de col roja">
+            <h3>Col roja</h3>
+            <p>Color intenso y sabor suave y fresco.</p>
+          </article>
+          <article class="product-card">
+            <img src="mizuna.jpeg" alt="Microgreens de mizuna">
+            <h3>Mizuna</h3>
+            <p>Sabor ligeramente picante y muy nutritivo.</p>
+          </article>
+          <article class="product-card">
+            <img src="hinojo.jpeg" alt="Microgreens de hinojo">
+            <h3>Hinojo</h3>
+            <p>Sabor anisado suave y aroma característico.</p>
+          </article>
+          <article class="product-card">
+            <img src="mostaza.jpeg" alt="Microgreens de mostaza">
+            <h3>Mostaza</h3>
+            <p>Sabor intenso con un toque picante.</p>
+          </article>
+          <article class="product-card">
+            <img src="lenteja.jpeg" alt="Microgreens de lenteja">
+            <h3>Lentejas</h3>
+            <p>Sabor delicado y alto valor nutricional.</p>
+          </article>
+          <article class="product-card">
+            <img src="pak%20choi.jpeg" alt="Microgreens de pak choi">
+            <h3>Pak choi</h3>
+            <p>Sabor suave y textura crujiente.</p>
+          </article>
+          <article class="product-card">
+            <img src="albahaca.jpeg" alt="Microgreens de albahaca">
+            <h3>Albahaca</h3>
+            <p>Aroma dulce e intenso a albahaca fresca.</p>
+          </article>
+          <article class="product-card">
+            <img src="rucola.jpeg" alt="Microgreens de rúcula">
+            <h3>Rúcula</h3>
+            <p>Sabor picante y aromático.</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="contact" id="contacto" aria-labelledby="contacto-title">
+        <div class="section-heading">
+          <p class="section-kicker">Contáctanos</p>
+          <h2 id="contacto-title">Pedidos, muestras y consultas</h2>
+        </div>
+        <div class="contact-grid">
+          <a class="contact-card" href="https://wa.me/34699664041">
+            <span class="contact-card__icon" aria-hidden="true">☎</span>
+            <span>
+              <strong>Matteo</strong>
+              <small>+34 699 664 041</small>
+              <em>Escríbenos por WhatsApp</em>
+            </span>
+          </a>
+          <a class="contact-card" href="https://wa.me/34641629653">
+            <span class="contact-card__icon" aria-hidden="true">☎</span>
+            <span>
+              <strong>Giulia</strong>
+              <small>+34 641 629 653</small>
+              <em>Escríbenos por WhatsApp</em>
+            </span>
+          </a>
+          <a class="contact-card" href="mailto:info@towerpower.green">
+            <span class="contact-card__icon" aria-hidden="true">✉</span>
+            <span>
+              <strong>Email</strong>
+              <small>info@towerpower.green</small>
+              <em>Envíanos un correo</em>
+            </span>
+          </a>
+        </div>
+        <p class="location">Tefia, Fuerteventura · Islas Canarias · España</p>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <img class="footer__logo" src="towerpower-logo.jpg" alt="Tower Power">
+      <span>Mejor para ti. Mejor para el planeta.</span>
+    </footer>
+  </body>
 </html>
